@@ -167,8 +167,8 @@ for d_type in ['CT', 'CXR']:
         classifiers['LogisticRegression'] = LogisticRegression(**parameters['LogisticRegression'])
         classifiers['KNN'] = KNeighborsClassifier(**parameters['KNN'])
 
-        # for training_type in ['separate_data','fused_data']:
-        for training_type in ['image_data']:
+        for training_type in ['separate_data','fused_data','image_data']:
+        # for training_type in ['image_data']:
             print(f"⏩ Working on: {training_type} {fussion_model} training")
    
             # Load data
