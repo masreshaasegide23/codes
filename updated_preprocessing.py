@@ -35,12 +35,12 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 # Define a variable for the dataset of sample (directory number)
 ''' full dataset size'''
-CT = 326 
-CXR = 557
+# CT = 326 
+# CXR = 557
 
 ''' test dataset size '''
-# CT =  20 
-# CXR = 20 
+CT =  20 
+CXR = 20 
 
 """# Path setup"""
 
