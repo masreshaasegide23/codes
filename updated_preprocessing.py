@@ -35,12 +35,12 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 # Define a variable for the dataset of sample (directory number)
 ''' full dataset size'''
-# CT = 326 
-# CXR = 557
+CT = 326 
+CXR = 557
 
 ''' test dataset size '''
-CT =  20 
-CXR = 20 
+# CT =  20 
+# CXR = 20 
 
 """# Path setup"""
 
@@ -814,7 +814,7 @@ def load_image_data(path, image_type):
         print(f"\t\tNumber of DICOM files in {folder}: {dicom_file_count}")
 
         # Process each DICOM file
-        for dicom_file in tqdm(dicom_files, desc=f"\t\tProcessing {folder} DICOM files"):
+        for dicom_file in tqdm(dicom_files, desc=f"\t\tProcessing {category} {folder} DICOM files"):
             # Extract image_name
             image_name = os.path.basename(dicom_file).replace('.dcm', '')
 
